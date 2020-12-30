@@ -1,0 +1,279 @@
+main > .container {
+  padding: 60px 15px 0;
+}
+
+nav {
+  background-color: #563d7c;
+}
+
+.footer {
+  background-color: #563d7c;
+  color: white !important;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.wrapper {
+  width: 600px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  border: 8px solid #fff;
+  border-radius: 8px;
+  /*    إخفاء أي مساحة زائدة عن حدود الإسالايدر*/
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.switch { 
+  display: none; 
+}
+
+.bottom {
+  background: #fff;
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+}
+
+.label {
+  background: #00bcd4;
+  height: 15px;
+  width: 15px;
+  border-radius: 4px;
+  /*لإزاحة النص*/
+  text-indent: 50px;
+  /*اخفاء المساحة الزائدة عن حدود الزر*/
+  overflow: hidden;
+  /*    تغيير شكل المؤشر عند التأشير*/
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  z-index: 99;
+  /*حركة انتقالية*/
+  transition: all 0.25s;
+}
+.label:nth-of-type(1) { 
+  left: 0px; 
+}
+
+.label:nth-of-type(2) { 
+  left: 30px; 
+}
+
+.label:nth-of-type(3) { 
+  left: 60px;
+}
+
+.label:nth-of-type(4) { 
+  left: 90px; 
+}
+
+.label:nth-of-type(5) { 
+  left: 120px; 
+}
+.content {
+  width: 100%;
+  float: left;
+  margin-right: -100%;
+}
+
+.switch:not(:checked) + .label + .content {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.switch:checked + .label {
+  background: #039baf;
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+ul.timeline:before {
+  content: ' ';
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #22c0e8;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px !important;
+  width: 65px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.lblerr {
+
+  display: none;
+  color:#c9a6ff;
+  font-weight: bold;
+}
+
+#cinsiyet {
+  display:none;
+}
+
+#iletisimFormuDiv {
+  margin:auto; 
+  background-color: #563d7c !important;
+  border: 1px solid black;
+}
+
+#iletisimBilgi {
+  margin:auto; 
+  background-color: #563d7c !important;
+  border: 1px solid black;
+}
+
+#loginSayfasi {
+  margin:auto; 
+  background-color: #563d7c !important;
+  border: 1px solid black;
+}
+
+#adminSayfasi {
+  margin:auto; 
+  background-color: #563d7c !important;
+  border: 1px solid black;
+}
+
+.marginAuto {
+  margin:auto;
+}
+
+#hakkinda
+{
+  height: 100% !important;
+  border-radius: 0% !important;
+  margin-bottom:0 !important;
+
+}
+
+.baslik {
+  font-size: 40px;
+  color:#563d7c !important;
+  font-weight: bold;
+}
+
+.anasayfaJumbotron{
+  background: url("../img/kudus.jpg") no-repeat center center fixed;
+  background-size: cover !important;
+  height: 100% !important;
+  border-radius: 0% !important;
+  margin-bottom:0 !important;
+  opacity: 0.5;
+}
+
+.sehrimJumbotron{
+  background: url("../img/kudus2.jpg") no-repeat center center fixed;
+  background-size: cover !important;
+  height: 100% !important;
+  border-radius: 0% !important;
+  margin-bottom:0 !important;
+  opacity: 0.5;
+}
+
+.mirasimizJumbotron{
+  background: url("../img/istanbul.jpg") no-repeat center center fixed;
+  background-size: cover !important;
+  height: 100% !important;
+  border-radius: 0% !important;
+  margin-bottom:0 !important;
+  opacity: 0.5;
+}
+
+.mirasimizJumbotronicerik{
+  background-size: cover !important;
+  height: 100% !important;
+  border-radius: 0% !important;
+  margin-bottom:0 !important;
+  padding:0px !important;
+}
+
+.sehrimSlider{
+  margin-bottom: 0px !important;
+}
+
+.sehrimSlider
+{
+  background-size: cover !important;
+  height: 100% !important;
+  margin-bottom:0px !important;
+  padding:10px !important;
+}
+
+h1.baslik {
+  color:#563d7c;
+  margin-bottom:2rem !important;
+  font-weight: bold;
+}
+
+div > a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+section > .baslik {
+  color:#563d7c;
+  margin-bottom:2rem !important;
+}

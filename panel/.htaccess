@@ -1,0 +1,31 @@
+Options -indexes
+RewriteEngine On
+RewriteBase /omamaweb/panel/
+RewriteRule ^index$ index.php [NC,L]
+
+RewriteRule ^menu-ekle$ index.php?sayfa=menu-ekle [NC]
+RewriteRule ^menu-liste$ index.php?sayfa=menu-liste [NC]
+RewriteRule ^menu-duzenle/(.*)$ index.php?sayfa=menu-duzenle&id=$1 [NC]
+RewriteRule ^menu-sil/(.*)$ index.php?sayfa=menu-sil&id=$1 [NC]
+
+RewriteRule ^edu-ekle$ index.php?sayfa=edu-ekle [NC]
+RewriteRule ^edu-liste$ index.php?sayfa=edu-liste [NC]
+RewriteRule ^edu-duzenle/(.*)$ index.php?sayfa=edu-duzenle&id=$1 [NC]
+RewriteRule ^edu-sil/(.*)$ index.php?sayfa=edu-sil&id=$1 [NC]
+
+RewriteRule ^soc-ekle$ index.php?sayfa=soc-ekle [NC]
+RewriteRule ^soc-liste$ index.php?sayfa=soc-liste [NC]
+RewriteRule ^soc-duzenle/(.*)$ index.php?sayfa=soc-duzenle&id=$1 [NC]
+RewriteRule ^soc-sil/(.*)$ index.php?sayfa=soc-sil&id=$1 [NC]
+
+RewriteRule ^ayarlar$ index.php?sayfa=ayarlar [NC]
+RewriteRule ^kis-bilgiler$ index.php?sayfa=kis-bilgiler [NC]
+
+
+RewriteRule ^giris-yap$ giris.php [NC]
+RewriteRule ^cikis-yap$ index.php?sayfa=cikis [NC]
+
+
+
+
+
